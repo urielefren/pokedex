@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import  SearchBar  from './components/SearchBar';
+import  OptionsBar  from './components/OptionsBar';
 import PokemonList from './components/PokemonList';
 
 class App extends Component {
@@ -13,8 +13,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Pokedex</h1>
         </header>
-        <SearchBar />
-        <PokemonList />
+        <div className="container">
+          <OptionsBar />
+          <PokemonList />
+        </div>
       </div>
     );
   }
